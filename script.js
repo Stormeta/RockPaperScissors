@@ -24,7 +24,8 @@ function playRound(humanChoice, computerChoice) {
     if (humanChoice === computerChoice) {
         console.log(`It's a tie both chose ${humanChoice}`);
         return "tie";
-    } else if ((humanChoice === 'rock' && computerChoice === 'paper') || (humanChoice === 'paper' && computerChoice === 'scissors') || (humanChoice === 'scissors' && computerChoice === 'rock')) {
+    } else if ((humanChoice === 'rock' && computerChoice === 'paper') ||
+        (humanChoice === 'paper' && computerChoice === 'scissors') || (humanChoice === 'scissors' && computerChoice === 'rock')) {
         console.log(`You lose this round! ${computerChoice} beats ${humanChoice}.`);
         return "lost";
     } else {
